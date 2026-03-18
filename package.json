@@ -1,0 +1,9 @@
+{
+  "name": "ai-curator",
+  "version": "1.0.0",
+  "description": "AI Paper Curator — root package.json",
+  "scripts": {
+    "setup-whatsapp": "cd whatsapp_bridge && npm install",
+    "auth-whatsapp": "cd whatsapp_bridge && npm run test-auth"
+  }
+}

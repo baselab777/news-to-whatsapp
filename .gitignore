@@ -1,0 +1,38 @@
+# 환경변수 (API 키)
+.env
+.env.local
+.env.*.local
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.coverage
+htmlcov/
+
+# Node.js
+node_modules/
+whatsapp_bridge/node_modules/
+npm-debug.log*
+
+# WhatsApp 인증 세션 (절대 커밋 금지)
+whatsapp_bridge/.wwebjs_auth/
+whatsapp_bridge/.wwebjs_cache/
+
+# 로그 & 런타임 데이터
+*.log
+sent_log.json
+
+# OS
+.DS_Store
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/

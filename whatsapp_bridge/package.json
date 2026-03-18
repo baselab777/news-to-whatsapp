@@ -1,0 +1,14 @@
+{
+  "name": "whatsapp-bridge",
+  "version": "1.0.0",
+  "description": "WhatsApp sender bridge for ai-curator",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test-auth": "node -e \"const {Client,LocalAuth}=require('whatsapp-web.js');const qr=require('qrcode-terminal');const c=new Client({authStrategy:new LocalAuth()});c.on('qr',q=>{qr.generate(q,{small:true})});c.on('ready',()=>{console.log('Ready!');c.destroy()});c.initialize()\""
+  },
+  "dependencies": {
+    "whatsapp-web.js": "^1.23.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
